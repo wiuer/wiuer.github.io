@@ -78,8 +78,10 @@ img { max-width: 100%; height: auto; display: block; }
 .header.scrolled { box-shadow: 0 1px 12px rgba(0,0,0,0.04); }
 .header-inner { max-width: var(--max-w); margin: 0 auto; padding: 0 24px; height: 64px; display: flex; align-items: center; justify-content: space-between; }
 .logo-group { display: flex; align-items: center; gap: 12px; }
-.logo-img { height: 36px; width: auto; border-radius: 8px; }
-.logo-name { font-family: 'Instrument Serif', serif; font-size: 1.15rem; font-weight: 400; color: var(--ink); }
+.logo-img { height: 48px; width: auto; border-radius: 10px; }
+.logo-name { font-family: 'Instrument Serif', serif; font-size: 1.2rem; font-weight: 400; color: var(--ink); line-height: 1.2; }
+.logo-sub { font-size: .68rem; color: var(--ink-4); margin-top: 2px; }
+.logo-sub a { color: var(--ink-4); } .logo-sub a:hover { color: var(--ink-2); }
 .header-right { display: flex; align-items: center; gap: 10px; }
 .pulse-badge { display: flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 100px; background: rgba(16,185,129,0.06); border: 1px solid rgba(16,185,129,0.12); font-size: .7rem; font-weight: 600; color: #059669; }
 .pulse-badge .dot { width: 6px; height: 6px; border-radius: 50%; background: #10b981; animation: p 2s ease-in-out infinite; }
@@ -294,7 +296,10 @@ function main() {
   <div class="header-inner">
     <div class="logo-group">
       <img class="logo-img" src="${esc(fixImg(meta.siteLogo || '', siteUrl))}" alt="${esc(siteName)}">
-      <div class="logo-name">${esc(siteName)}</div>
+      <div>
+        <div class="logo-name">${esc(siteName)}</div>
+        <div class="logo-sub">商城原址：<a href="${siteUrl}" target="_blank" rel="noopener">${esc(siteUrl)}</a></div>
+      </div>
     </div>
     <div class="header-right">
       <div class="pulse-badge"><div class="dot"></div>自动发货</div>
