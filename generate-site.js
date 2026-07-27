@@ -80,7 +80,7 @@ img { max-width: 100%; height: auto; display: block; }
 .logo-group { display: flex; align-items: center; gap: 12px; }
 .logo-img { height: 48px; width: auto; border-radius: 10px; }
 .logo-name { font-family: 'Instrument Serif', serif; font-size: 1.2rem; font-weight: 400; color: var(--ink); line-height: 1.2; }
-.logo-sub { font-size: .68rem; color: var(--ink-4); margin-top: 2px; }
+.logo-sub { font-size: .78rem; color: var(--ink-4); margin-top: 0px; }
 .logo-sub a { color: var(--ink-4); } .logo-sub a:hover { color: var(--ink-2); }
 .header-right { display: flex; align-items: center; gap: 10px; }
 .pulse-badge { display: flex; align-items: center; gap: 6px; padding: 5px 14px; border-radius: 100px; background: rgba(16,185,129,0.06); border: 1px solid rgba(16,185,129,0.12); font-size: .7rem; font-weight: 600; color: #059669; }
